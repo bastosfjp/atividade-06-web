@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCalculadora Básica</title>
+</head>
+<body>
+    <h1>Calculadora Básica</h1>
+    
+    <script>
+
+        let num1 = parseFloat(prompt("Digite o primeiro número:"));
+        let num2 = parseFloat(prompt("Digite o segundo número:"));
+
+        let soma = num1 + num2;
+        let subtracao = num1 - num2;
+        let multiplicacao = num1 * num2;
+        let divisao = num2 !== 0 ? num1 / num2 : "Não é possível dividir por zero";
+
+
+        document.write("<p>O resultado da soma (" + num1 + " + " + num2 + ") é: " + soma + "</p>");
+        document.write("<p>O resultado da subtração (" + num1 + " - " + num2 + ") é: " + subtracao + "</p>");
+        document.write("<p>O resultado da multiplicação (" + num1 + " * " + num2 + ") é: " + multiplicacao + "</p>");
+        document.write("<p>O resultado da divisão (" + num1 + " / " + num2 + ") é: " + divisao + "</p>");
+    </script>
+</body>
+</html>
