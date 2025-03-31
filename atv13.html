@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Reais para Dólares</title>
+</head>
+<body>
+    <h1>Conversor de Reais para Dólares</h1>
+    
+    <script>
+
+        const cotacao = 5.00;  
+
+
+        let reais = parseFloat(prompt("Digite o valor em reais (BRL):"));
+
+
+        let dolares = reais / cotacao;
+
+
+        document.write("<p>Valor em Reais (BRL): R$ " + reais.toFixed(2) + "</p>");
+        document.write("<p>Valor em Dólares (USD): $ " + dolares.toFixed(2) + "</p>");
+    </script>
+</body>
+</html>
